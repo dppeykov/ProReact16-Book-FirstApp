@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import Logo from "./logo.png";
 
 export class TodoBanner extends Component {
   render = () => (
     <div className="bg-info text-white text-center p-3">
       <div>
         <h4>To Do List</h4>
-        <img src="" alt="LOGO" />
+        <img src={Logo} alt="ToDoApp" />
       </div>
 
       <div>
