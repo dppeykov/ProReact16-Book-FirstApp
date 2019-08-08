@@ -22,8 +22,8 @@ export class TodoCreator extends Component {
         value={this.state.newItemText}
         onChange={this.updateNewTextValue}
       />
-      <button className="btn btn-primary mt-1" onClick={this.createNewTodo}>
-        Add
+      <button className="btn btn-success ml-2" onClick={this.createNewTodo}>
+        +
       </button>
     </div>
   );
