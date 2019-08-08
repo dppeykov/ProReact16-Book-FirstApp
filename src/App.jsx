@@ -46,22 +46,11 @@ export default class App extends Component {
       <div>
         <TodoBanner tasks={this.state.todoItems} />
 
-        <div className="container text-center p-2">
-          <div className="d-flex flex-wrap justify-content-center align-items-center">
-            <input
-              className="form-control w-75"
-              value={this.state.newItemText}
-              onChange={this.updateNewTextValue}
-            />
-            <button
-              className="btn btn-success ml-2"
-              onClick={this.createNewTodo}
-            >
-              +
-            </button>
-          </div>
-          <table className="table table-striped table-bordered mt-3">
-            <thead>
+        <div className="container text-center">
+          <TodoCreator callback={this.createNewTodo} />
+
+          <table className="table table-striped table-bordered table-hover mt-3">
+            <thead className="bg-warning">
               <tr>
                 <th>Description</th>
                 <th>Done</th>

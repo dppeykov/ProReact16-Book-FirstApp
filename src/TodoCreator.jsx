@@ -16,14 +16,18 @@ export class TodoCreator extends Component {
   };
 
   render = () => (
-    <div className="my-1">
+    <div className="d-flex flex-wrap justify-content-center align-items-center p-4 m-0">
       <input
-        className="form-control"
+        className="form-control w-75 p-4"
         value={this.state.newItemText}
         onChange={this.updateNewTextValue}
+        placeholder="Please add the new item here ..."
       />
-      <button className="btn btn-success ml-2" onClick={this.createNewTodo}>
-        +
+      <button className="btn btn-warning ml-1" onClick={this.createNewTodo}>
+        <img
+          src="https://img.icons8.com/color/36/000000/plus--v2.png"
+          alt="ADD"
+        />
       </button>
     </div>
   );
